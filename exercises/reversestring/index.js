@@ -18,4 +18,10 @@ function reverse(str) {
 		.join('')
 }
 
+reverse('asdf')
+//the same done with reduce()
+// function reverse(str){
+//   return str.split('').reduce((reversed, character)=>character + reversed ,'')
+// }
+
 module.exports = reverse

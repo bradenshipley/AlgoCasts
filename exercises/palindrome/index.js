@@ -7,6 +7,15 @@
 //   palindrome("abba") === true
 //   palindrome("abcdefg") === false
 
-function palindrome(str) {}
+//store the reverse string in a variable, and return the boolean if the string is
+function palindrome(str) {
+	return (
+		str ===
+		str
+			.split('')
+			.reverse()
+			.join('')
+	)
+}
 
-module.exports = palindrome;
+module.exports = palindrome
