@@ -7,7 +7,27 @@
 // forms the first ten entries of the fibonacci series.
 // Example:
 //   fib(4) === 3
+//recursive solution
+function fib(n) {
+  if (n < 2) {
+    return n
+  }
+  return fib(n-1) + fib(n-2)
+}
 
-function fib(n) {}
+//iterative solution
+// function fib(n) {
+//   let arr = [0,1]
+//   for (let i = 2; i <= n; i++){
+//     if (i == 0 || i== 1) {
+//       continue
+//     } else {
+//       const a = arr[i - 1]
+//       const b= arr[i-2]
+//       arr.push(a+b)
+//     }
+//   }
+//   return arr[n]
+// }
 
 module.exports = fib;
